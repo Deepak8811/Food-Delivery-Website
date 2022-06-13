@@ -3,7 +3,7 @@
     padding: 0;
 
 }
-img{
+.img-2{
     height:40px;
     width: 50px;
     border-radius: 50%;
@@ -15,9 +15,16 @@ img{
 #navbar{
     display: flex;
   align-items: center;
-  position: relative;
-
-    
+  position:relative;
+  position: sticky;
+  top: 0px;
+  z-index: initial;
+  background: rgb(57, 56, 56);
+ 
+   
+}
+.item{
+    margin-top:0px;
 }
 #logo{
     margin: 10px 32px;
@@ -28,6 +35,7 @@ img{
 #logo img{
     height: 50px;
     margin: 3px 2px;
+    margin-top: 0%;
 
 
 }
@@ -40,10 +48,12 @@ img{
     content: "";
     background: black;
     position: absolute;
+    top: 0px;
+    bottom: 0px;
     height: 100%;
     width: 100%;
     z-index: -1;
-    opacity: 0.6;
+    opacity: 0.7;
 
 }
 #navbar ul li{
@@ -65,25 +75,29 @@ img{
 #navbar ul li a:hover{
   color: black;
   background:white;
+ 
 
 }
 #home{
     display: flex;
     flex-direction: column;
     padding: 3px 200px;
-    height: 400px;
+    height: 788px;
     justify-content: center;
     align-items: center;
 
 }
 #home::before{
     content: "";
-    background: url('bg.jpg') no-repeat center center/cover;
+    background: url('bg0.jpg') no-repeat center center/cover;
     position: absolute;
     height: 90%;
+    top: 0px;
+    bottom: 0px;
     width: 100%;
+   
     z-index: -1;
-    opacity: 0.98;
+    opacity: 0.98; 
 
 }
 #home p{
@@ -97,11 +111,78 @@ img{
     font-family: 'Bree Serif', serif; 
     color: aliceblue;
     text-align: center;
+  
 
 }
+/* services section */
+#services{
+    margin: 34px;
+    display: flex;
+
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 23px;
+    background: rgb(223, 218, 218);
+    
+
+
+}
+#services .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+
+}
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+
+}
+
 .h-primary{
     font-size: 3.6rem;
     padding: 12px;
+    font-family: 'Bree Serif', serif;
+
+}
+.h-secondary{
+    font-size: 2rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+
+}
+/* Clients section */
+#clint-section{
+    height: 345px;
+
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#clients img{
+    height: 300px;
+
+}
+.btn{
+    padding: 5px 18px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    cursor: pointer;
+
+
+}
+.center{
+    text-align: center;
 
 }
 
